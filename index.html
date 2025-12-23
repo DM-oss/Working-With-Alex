@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work with alex</title>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a href="#"></a>
+            <button type="button" id="them">
+
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">
+                        search wheater in your city
+                    </h1>
+                    <form class="" id="weather-form"></form>
+                        <div class="col-12">
+                            <label for="city-input">
+                                name of city (for example: london, tokyo, delhi)
+                            </label>
+                            <input 
+                            type="text" 
+                            name="form-control" 
+                            id="city-input" 
+                            placeholder="enter city name"
+                            required/>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit">
+                                display weather
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div id="weather-result" class="card">
+                <div class="card-body">
+                    <h2 id="result-location"></h2>
+                    <p id="result-temp"></p>
+                    <p id="result-description"></p>
+                    <p id="result-extra"></p>
+                </div>
+            </div>
+            <div class="weather-message" role="alert"></div>
+        </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
